@@ -1,0 +1,129 @@
+/*
+ * THIS IS GDANSK UNIVERSITY OF TECHNOLOGY (PG) PRESENTATION TEMPLATE - MARP VERSION
+ * Markdown (Marp) port of pgbeamer.tex
+ *
+ * @theme pgbeamer
+ * @auto-scaling true
+ * @size 16:9 1280px 720px
+ * @size 4:3 960px 720px
+ */
+
+@import 'default';
+
+/* colors from pgbeamer.tex */
+:root {
+  --pg-blue: rgb(0, 56, 101);
+  --pg-red: rgb(193, 10, 39);
+  --pg-silver: rgb(200, 200, 200);
+}
+
+/* normal slide: small logo + title on top, PG blue text */
+section {
+  color: var(--pg-blue);
+  font-size: 28px;
+  padding: 120px 60px 70px 60px;
+  background: white url(pgbeamer/pg-logo-small-pl.png) no-repeat 30px 22px;
+  background-size: auto 60px;
+}
+
+section.en {
+  background-image: url(pgbeamer/pg-logo-small-en.png);
+}
+
+h1 {
+  position: absolute;
+  top: 26px;
+  left: 375px;
+  margin: 0;
+  font-size: 36px;
+  color: var(--pg-blue);
+  font-weight: bold;
+}
+
+h2, h3, strong {
+  color: var(--pg-blue);
+}
+
+a, em {
+  color: var(--pg-red);
+}
+
+/* itemize and enumerate like in pgbeamer.tex */
+ul > li::marker {
+  color: var(--pg-red);
+}
+
+ul ul > li {
+  list-style: "– ";
+}
+
+ol, ul ol {
+  list-style-type: decimal;
+}
+
+ol > li::marker {
+  color: var(--pg-red);
+  font-weight: bold;
+}
+
+/* footline */
+footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  padding: 5px 60px;
+  background: var(--pg-blue);
+  color: white;
+  font-size: 16px;
+}
+
+section::after {
+  bottom: 5px;
+  right: 30px;
+  font-size: 16px;
+  color: white;
+}
+
+/* PG title page: <!-- _class: title --> */
+section.title {
+  background: var(--pg-blue) url(pgbeamer/pg-logo-big-pl.png) no-repeat center 60px;
+  background-size: auto 220px;
+  padding-top: 300px;
+  color: white;
+  text-align: center;
+}
+
+section.title.en {
+  background-image: url(pgbeamer/pg-logo-big-en.png);
+}
+
+section.title h1 {
+  position: static;
+  color: white;
+  font-weight: normal;
+  font-size: 40px;
+}
+
+section.title h2,
+section.title strong,
+section.title a {
+  color: white;
+}
+
+section.title footer,
+section.title::after,
+section.last footer,
+section.last::after {
+  display: none;
+}
+
+/* PG last page: <!-- _class: last --> */
+section.last {
+  background: var(--pg-blue) url(pgbeamer/pg-logo-big-pl.png) no-repeat center;
+  background-size: auto 360px;
+}
+
+section.last.en {
+  background-image: url(pgbeamer/pg-logo-big-en.png);
+}
