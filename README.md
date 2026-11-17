@@ -2,10 +2,6 @@
 
 Gdańsk University of Technology - LaTeX beamer presentation template
 
-Politechnika Gdańska - Szablon prezentacji LaTeX beamer
-
-The template supports Polish and English languages. 
-
 Download: https://github.com/jachoo/pg-beamer/archive/master.zip
 
 Author: Jan Cychnerski
@@ -15,8 +11,6 @@ Author: Jan Cychnerski
 ## Markdown (Marp) version
 
 The same template written in Markdown for [Marp](https://marp.app/) - no LaTeX needed.
-
-Wersja w Markdown (Marp) - ten sam szablon bez LaTeX-a.
 
 Files:
 
