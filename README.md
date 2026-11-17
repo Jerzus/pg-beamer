@@ -2,8 +2,6 @@
 
 Gdańsk University of Technology - LaTeX beamer presentation template
 
-Download: https://github.com/jachoo/pg-beamer/archive/master.zip
-
 Author: Jan Cychnerski
 
 ![](https://github.com/jachoo/pg-beamer/raw/master/pg-presentation.jpg)
